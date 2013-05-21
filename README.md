@@ -29,7 +29,7 @@ So you want to help enhancing this collection of repos, nice!
 2. Click the `Fork` button, the branch with a plus icon.
 3. Make the changes that you consider necessary.
 4. Click the `Pull Request` button.
-5. Fill in the PR form whit a detailed description of your changes.
+5. Fill in the PR form with a detailed description of your changes.
 6. Click `Send pull request`.
 7. ???
 8. Profit!
