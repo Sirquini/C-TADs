@@ -1,9 +1,10 @@
+#include <stdlib.h>
+
 #include "lista.h"
 
 Lista crearLista(void)
 {
-	Lista l;
-	l = NULL;
+	Lista l = NULL;
 	return l;
 }
 
@@ -12,14 +13,11 @@ Lista anxLista(Lista l, lElement d)
 	Lista nueva, tmp;
 
 	nueva = (Lista) malloc(sizeof(struct node));
-
 	nueva -> data = d;
 	nueva -> sig = NULL;
 
-	if (l == NULL)
-	{
+	if (vaciaLista(l))
 		l = nueva;
-	}
 	else
 	{
 		tmp = l;
@@ -78,17 +76,16 @@ Lista elimLista(Lista l, int pos)
 		}
 		tmp2 = tmp -> sig;
 		tmp -> sig = tmp2 -> sig;
-		tmp2 -> sig = NULL;
-		free(tmp2);
 	}
+	tmp2 -> sig = NULL;
+	free(tmp2);
 	return l;
 }
 
 lElement infoLista(Lista l, int pos)
 {
-	Lista tmp;
 	int i;
-	tmp = l;
+	Lista tmp = l;
 	for (i = 1; i < pos; ++i)
 	{
 		tmp = tmp -> sig;
@@ -99,9 +96,8 @@ lElement infoLista(Lista l, int pos)
 int longLista(Lista l)
 {
 	unsigned int i;
-	Lista tmp;
-	tmp = l;
-	for (i = 1; tmp -> sig != NULL ; ++i)
+	Lista tmp = l;
+	for (i = 0; tmp != NULL ; ++i)
 	{
 		tmp = tmp -> sig;
 	}

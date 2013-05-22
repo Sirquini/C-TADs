@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef _LISTA_H
+#define _LISTA_H
 
 typedef int lElement;
 
@@ -24,3 +24,5 @@ lElement infoLista(Lista, int);
 int longLista(Lista);
 
 int vaciaLista(Lista);
+
+#endif
