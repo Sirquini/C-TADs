@@ -65,9 +65,7 @@ Lista elimLista(Lista l, int pos)
 
 	tmp = tmp2 = l;
 	if (pos == 1)
-	{
 		l = l -> sig;
-	}
 	else
 	{
 		for (i = 0; i < pos - 2; ++i)
@@ -87,9 +85,7 @@ lElement infoLista(Lista l, int pos)
 	int i;
 	Lista tmp = l;
 	for (i = 1; i < pos; ++i)
-	{
 		tmp = tmp -> sig;
-	}
 	return tmp -> data;
 }
 
@@ -98,9 +94,7 @@ int longLista(Lista l)
 	unsigned int i;
 	Lista tmp = l;
 	for (i = 0; tmp != NULL ; ++i)
-	{
 		tmp = tmp -> sig;
-	}
 	return i;
 }
 
