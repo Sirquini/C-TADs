@@ -102,3 +102,14 @@ int vaciaLista(Lista l)
 {
 	return (l == NULL) ? 1 : 0;
 }
+
+void destruirLista(Lista l)
+{
+	Lista tmp;
+	while(l != NULL)
+	{
+		tmp = l;
+		l = l -> sig;
+		free(tmp);
+	}
+}

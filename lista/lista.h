@@ -51,4 +51,10 @@ int longLista(Lista);
  */
 int vaciaLista(Lista);
 
+/**
+ * Destruye toda la lista,
+ * liberando toda la memoria reservada.
+ */
+void destruirLista(Lista);
+
 #endif
