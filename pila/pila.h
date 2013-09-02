@@ -1,6 +1,6 @@
 /*arcivo .h del TAD pila dinamico*/
-#ifndef pila_h_
-#define pila_h_ 
+#ifndef _PILA_H
+#define _PILA_H 
 #include <stdio.h>
 #include <stdlib.h>
 /*declaracion de estructura lifo"last in, frist out"*/
@@ -33,4 +33,4 @@ int peek(pila p);
 la misma pila invertida*/
 pila invertir(pila p);
 
-#endif
+#endif /* _PILA_H */

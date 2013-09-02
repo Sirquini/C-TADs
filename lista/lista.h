@@ -57,4 +57,4 @@ int vaciaLista(Lista);
  */
 void destruirLista(Lista);
 
-#endif
+#endif /* _LISTA_H */

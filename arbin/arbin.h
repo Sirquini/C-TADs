@@ -34,4 +34,4 @@ int semejantesArbin(Arbin, Arbin);
 
 int incluidoArbin(Arbin, Arbin);
 
-#endif
+#endif /* _ARBIN_H */
